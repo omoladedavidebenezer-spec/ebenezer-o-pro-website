@@ -52,10 +52,10 @@ export function SiteFooter() {
             <span className="font-display text-sm font-extrabold">EBENEZER <span className="gold-text">O PRO</span></span>
           </Link>
           <p className="mt-5 max-w-sm text-sm leading-7 text-neutral-500">We build, create and help businesses grow with thoughtful digital solutions.</p>
-          <p className="mt-3 text-xs text-neutral-500">Get in touch through the contact page.</p>
+          <a className="mt-3 inline-block text-sm text-neutral-300 hover:text-[#d4af37]" href="mailto:ebenezeroworkprofile@gmail.com">ebenezeroworkprofile@gmail.com</a><a className="mt-2 block text-sm text-neutral-400 hover:text-[#d4af37]" href="https://wa.me/2347035558456" target="_blank" rel="noreferrer">WhatsApp: +234 703 555 8456</a>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs text-neutral-400">
-          {links.slice(1).map(link => <Link key={link.href} href={link.href} className="hover:text-[#d4af37]">{link.label}</Link>)}
+          {links.slice(1).map(link => <Link key={link.href} href={link.href} className="hover:text-[#d4af37]">{link.label}</Link>)}<a href="https://www.instagram.com/ebenezeropro/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.tiktok.com/@ebenezer_o124" target="_blank" rel="noreferrer">TikTok</a><a href="https://web.facebook.com/profile.php?id=61591901880863" target="_blank" rel="noreferrer">Facebook</a>
           <Link href="/privacy-policy">Privacy</Link><Link href="/terms">Terms</Link>
         </div>
       </div>
