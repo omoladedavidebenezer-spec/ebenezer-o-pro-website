@@ -52,7 +52,7 @@ export function SiteFooter() {
             <span className="font-display text-sm font-extrabold">EBENEZER <span className="gold-text">O PRO</span></span>
           </Link>
           <p className="mt-5 max-w-sm text-sm leading-7 text-neutral-500">We build, create and help businesses grow with thoughtful digital solutions.</p>
-          <a className="mt-3 inline-block text-sm text-neutral-300 hover:text-[#d4af37]" href="mailto:omoladedavidebenezer@gmail.com">omoladedavidebenezer@gmail.com</a>
+          <p className="mt-3 text-xs text-neutral-500">Get in touch through the contact page.</p>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs text-neutral-400">
           {links.slice(1).map(link => <Link key={link.href} href={link.href} className="hover:text-[#d4af37]">{link.label}</Link>)}
