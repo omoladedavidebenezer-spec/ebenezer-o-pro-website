@@ -15,6 +15,12 @@ const websites = [
   { name: "Enhance Braiding Salon", type: "Beauty & Hair", url: "https://enhancebraidingsalon.com/", detail: "A salon website highlighting specialist braiding services, helpful information and appointment booking." }
 ];
 
+const videos = [
+  { title: "Luxury Handbag Product Film", category: "Fashion / Product Commercial", src: "/videos/luxury-handbag-commercial.mp4", description: "A close-up product film highlighting the handbag’s texture, hardware and finish.", layout: "landscape" },
+  { title: "Perfume Model Advertisement", category: "Beauty / AI UGC", src: "/videos/perfume-model-commercial.mp4", description: "A model-led fragrance advertisement with an editorial beauty direction.", layout: "portrait" },
+  { title: "Pink Handbag Product Showcase", category: "Fashion / Product Commercial", src: "/videos/pink-handbag-showcase.mp4", description: "A clean product showcase featuring a patterned handbag and its design details.", layout: "portrait" }
+];
+
 const social = [
   { name: "PT Prunchy", url: "https://www.instagram.com/pt_prunchy/", type: "Fitness & Lifestyle" },
   { name: "Mariolaw EliteFit", url: "https://www.instagram.com/mariolaw_elitefit/", type: "Fitness" },
@@ -37,7 +43,7 @@ export default function PortfolioPage() {
       <p className="mb-8 max-w-2xl leading-7 text-neutral-500">Explore these Instagram profiles connected to our social media management work.</p>
       <div className="grid gap-5 md:grid-cols-3">{social.map((p, i) => <article key={p.name} className="service-card p-7"><span className="eyebrow">0{i + 1} / {p.type}</span><h3 className="mt-7 font-display text-xl font-bold">{p.name}</h3><div className="mt-6"><ProjectLink url={p.url}>VIEW INSTAGRAM PROFILE</ProjectLink></div></article>)}</div>
     </div></section>
-    <section className="section"><div className="container"><div className="mb-8 flex items-center gap-3"><Video className="gold-text" size={22}/><div><p className="eyebrow">03 / AI VIDEO & CREATIVE ADVERTISING</p><h2 className="mt-2 font-display text-3xl font-bold">Video projects</h2></div></div><div className="border border-white/10 bg-[#111] p-8 md:p-10"><p className="max-w-2xl leading-8 text-neutral-400">AI video commercials and creative advertising samples will be added here when the video files are provided.</p><p className="mt-3 text-sm text-neutral-600">Video previews coming soon.</p></div></div></section>
+    <section className="section"><div className="container"><div className="mb-8 flex items-center gap-3"><Video className="gold-text" size={22}/><div><p className="eyebrow">03 / AI VIDEO & CREATIVE ADVERTISING</p><h2 className="mt-2 font-display text-3xl font-bold">Video projects</h2></div></div><div className="border border-white/10 bg-[#111] p-8 md:p-10"><p className="mb-8 max-w-2xl leading-8 text-neutral-400">A selection of original AI-assisted product and promotional video concepts created for fashion and beauty advertising.</p><div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">{videos.map((v) => <article key={v.src} className="service-card overflow-hidden"><div className={v.layout === "portrait" ? "mx-auto aspect-[9/16] max-h-[430px] bg-black" : "aspect-video bg-black"}><video className="h-full w-full object-contain" controls preload="metadata" playsInline><source src={v.src} type="video/mp4"/>Your browser does not support the video element.</video></div><div className="p-6"><p className="eyebrow">{v.category}</p><h3 className="mt-3 font-display text-lg font-bold">{v.title}</h3><p className="mt-3 text-sm leading-7 text-neutral-500">{v.description}</p></div></article>)}</div></div></div></section>
     <section className="section bg-[#17140c]"><div className="container flex flex-col items-start justify-between gap-7 md:flex-row md:items-center"><div><p className="eyebrow mb-4">HAVE A PROJECT IN MIND?</p><h2 className="section-title text-3xl md:text-4xl">Let’s create something <span className="gold-text">great.</span></h2></div><Link href="/contact" className="gold-button">LET’S TALK <ArrowUpRight size={16}/></Link></div></section>
   </main></PageFrame>;
 }
