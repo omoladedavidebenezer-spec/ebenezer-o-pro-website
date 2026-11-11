@@ -19,8 +19,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="container flex min-h-[78px] items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-3" aria-label="Ebenezer O Pro home" onClick={() => setOpen(false)}>
-          <span className="grid h-10 w-10 place-items-center border border-[#d4af37] font-display text-sm font-extrabold tracking-tight text-[#d4af37]">EO<span className="text-white">P</span></span>
-          <span className="font-display text-sm font-extrabold tracking-wide">EBENEZER <span className="gold-text">O PRO</span><span className="block text-[9px] font-medium tracking-[.25em] text-neutral-500">DIGITAL CREATIVE STUDIO</span></span>
+          <img src="/brand-logo.svg" alt="Ebenezer Pro" className="h-12 w-[82px] object-contain" />
         </Link>
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
           {links.map(link => <Link key={link.href} className="nav-link" href={link.href}>{link.label}</Link>)}
@@ -48,8 +47,7 @@ export function SiteFooter() {
       <div className="container flex flex-col justify-between gap-8 md:flex-row md:items-end">
         <div>
           <Link href="/" className="flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center border border-[#d4af37] font-display text-sm font-extrabold text-[#d4af37]">EO<span className="text-white">P</span></span>
-            <span className="font-display text-sm font-extrabold">EBENEZER <span className="gold-text">O PRO</span></span>
+            <img src="/brand-logo.svg" alt="Ebenezer Pro" className="h-12 w-[82px] object-contain" />
           </Link>
           <p className="mt-5 max-w-sm text-sm leading-7 text-neutral-500">We build, create and help businesses grow with thoughtful digital solutions.</p>
           <a className="mt-3 inline-block text-sm text-neutral-300 hover:text-[#d4af37]" href="mailto:ebenezeroworkprofile@gmail.com">ebenezeroworkprofile@gmail.com</a><a className="mt-2 block text-sm text-neutral-400 hover:text-[#d4af37]" href="https://wa.me/2347035558456" target="_blank" rel="noreferrer">WhatsApp: +234 703 555 8456</a>
