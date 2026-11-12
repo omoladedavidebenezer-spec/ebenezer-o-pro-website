@@ -16,9 +16,9 @@ const websites = [
 ];
 
 const videos = [
-  { title: "Luxury Handbag Product Film", category: "Fashion / Product Commercial", src: "/videos/luxury-handbag-commercial.mp4", description: "A close-up product film highlighting the handbag’s texture, hardware and finish.", layout: "landscape" },
+  { title: "Luxury Handbag Product Film", category: "Fashion / Product Commercial", src: "/videos/luxury-handbag-commercial.mp4", description: "A model-free luxury handbag product showcase.", layout: "portrait" },
   { title: "Perfume Model Advertisement", category: "Beauty / AI UGC", src: "/videos/perfume-model-commercial.mp4", description: "A model-led fragrance advertisement with an editorial beauty direction.", layout: "portrait" },
-  { title: "Pink Handbag Product Showcase", category: "Fashion / Product Commercial", src: "/videos/pink-handbag-showcase.mp4", description: "A clean product showcase featuring a patterned handbag and its design details.", layout: "portrait" }
+  { title: "Creative Product Advertisement", category: "Product / Promotional Video", src: "/videos/creative-product-video.mp4", description: "A short-form creative product advertisement for social media and digital campaigns.", layout: "landscape" }
 ];
 
 const social = [
